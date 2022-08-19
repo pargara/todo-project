@@ -1,0 +1,12 @@
+<div class="container">
+<p style="color: green"><%= notice %></p>
+
+<%= render @todo %>
+
+<div>
+  <%= link_to "Edit this todo", edit_todo_path(@todo), class:"link-primary" %> |
+  <%= link_to "Back to todos", todos_path, class:"link-primary" %>
+
+  <%= button_to "Eliminar esta tarea", @todo, method: :delete, class:"btn btn-primary mt-4" %>
+</div>
+</div>
